@@ -10,3 +10,26 @@ all the content that we will display will be in body.
 
 *****For dummy text****
 https://www.lipsum.com/
+
+
+***** Type of tags*****
+block level element
+> Always start from new line
+> Bit heavy as compared to inline
+> p, h1
+
+Inline element
+>Start from  same line
+>inline element are light in weight
+>span, a 
+
+
+*******Self closing tags*****
+br, hr, img
+
+
+
+*****Type of List*****
+>Ordered List
+>Unordered List
+>Descriptive List

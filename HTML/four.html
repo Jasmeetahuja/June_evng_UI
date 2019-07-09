@@ -11,6 +11,18 @@
         <hr/>
         <div>
             <form method="GET">
+                <fieldset>
+                    <legend>Employee Form</legend>
+                    <div>
+                            <label for="officialid">Official ID</label>
+                                <div>
+                                    <input type="text"
+                                           value="6754578384"
+                                           id="officialid"
+                                           name="off_id"
+                                           readonly/>
+                                </div>
+                        </div>
                 <div>
                     <label for="fname">FirstName</label>
                         <div>
@@ -21,6 +33,14 @@
                                    required/>
                         </div>
                 </div>
+                <div>
+                        <label for="upload">Upload</label>
+                            <div>
+                                <input type="file"
+                                       id="upload"
+                                       name="upload"/>
+                            </div>
+                    </div>
                 <div>
                     <label for="lname">LastName</label>
                         <div>
@@ -38,6 +58,41 @@
                                     id="email"
                                     name="Email"
                                     required/>
+                        </div>
+                </div>
+                <div>
+                    <label for="pwd">Password</label>
+                        <div>
+                             <input type="password"
+                                    placeholder="password"
+                                    minlength="8"
+                                    id="pwd"
+                                    name="pass"/>
+                        </div>
+                </div>
+                <div>
+                    <label for="dt">Date</label>
+                        <div>
+                             <input type="date"
+                                    id="dt"
+                                    name="date"/>
+                        </div>
+                </div>
+                <div>
+                    <label for="clr">Color</label>
+                        <div>
+                             <input type="color"
+                                    id="clr"
+                                    name="color"/>
+                        </div>
+                </div>
+                <div>
+                    <label for="tel">Phone</label>
+                        <div>
+                             <input type="text"
+                                    maxlength="10"
+                                    id="tel"
+                                    name="phone"/>
                         </div>
                 </div>
                 <div>
@@ -77,9 +132,22 @@
                                name="codelang"
                                value="node"/>Node
                     </label>
-                </div>  
+                </div> 
+                <div>
+                    <label>Role</label>
+                    <select multiple>
+                        <option>IT Software</option>
+                        <option>Testing</option>
+                        <option>Database</option>
+                    </select>
+                </div> 
+                <div>
+                    <label>Comments</label>
+                    <textarea rows="8" cols="80"></textarea>
+                </div>
                 <button type="submit">Submit</button> 
-                <button type="reset">Reset</button>
+                <button type="reset" disabled=true>Reset</button>
+            </fieldset>
             </form>
         </div>
     </body>

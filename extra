@@ -33,3 +33,18 @@ br, hr, img
 >Ordered List
 >Unordered List
 >Descriptive List
+
+
+*****Way to Add CSS*****
+style tag
+inline css
+external css
+
+
+inline css > style tag > external css
+
+
+*****Way to target element****
+tag name
+id   => for unique   target by # symbol
+class =>common       target by . 

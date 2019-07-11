@@ -48,3 +48,10 @@ inline css > style tag > external css
 tag name
 id   => for unique   target by # symbol
 class =>common       target by . 
+
+******Types of Border*****
+solid
+dotted
+dashed
+double
+groove

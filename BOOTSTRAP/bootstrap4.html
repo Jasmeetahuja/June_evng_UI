@@ -36,6 +36,109 @@
                         <button class="btn btn-success" type="button">Submit</button>
                         <button class="btn btn-danger" type="button">Reset</button>
                     </form>
+                    <form class="form-inline">
+                            <div class="form-group">
+                                    <label for="fname" class="label-control">Firstname</label>
+                                    <input type="text"
+                                    placeholder="firstName"
+                                    class="form-control"
+                                    id="fname"/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lname" class="label-control">Lastname</label>
+                                    <input type="text"
+                                    placeholder="lastName"
+                                    class="form-control"
+                                    id="lname"/>
+                                </div>  
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox">
+                                        Full time
+                                    </label>
+                                </div> 
+                                <button class="btn btn-success" type="button">Submit</button>
+                                <button class="btn btn-danger" type="button">Reset</button>
+                        </form>
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                            <label class="control-label col-sm-2" for="fname">
+                                FirstName:
+                            </label>
+                            <div class="col-sm-10">
+                                    <input type="text"
+                                    placeholder="firstName"
+                                    class="form-control"
+                                    id="fname"/>
+                            </div>
+                            </div>
+                            <div class="form-group">
+                                    <label class="control-label col-sm-2" for="lname">
+                                        LastName:
+                                    </label>
+                                    <div class="col-sm-10">
+                                            <input type="text"
+                                            placeholder="lastName"
+                                            class="form-control"
+                                            id="lname"/>
+                                    </div>
+                                    </div>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="Subject">JavaScript
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="Subject">React
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="Subject">Node
+                                    </label>
+                                    <br/><br/>
+
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <i class="glyphicon glyphicon-user"></i>
+                                        </span>
+                                        <input type="text" class="form-control"
+                                            placeholder="email"/>
+                                    </div>
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <i class="glyphicon glyphicon-lock"></i>
+                                        </span>
+                                        <input type="text" class="form-control"
+                                            placeholder="password"/>
+                                    </div>
+                        </form>
+                        <button type="button" class="btn btn-primary"
+                                data-toggle="modal" data-target="#details">
+                            Details
+                        </button>
+                        <div id="details" class="modal fade" role="dialog">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+
+                                    </div>
+                                    <div class="modal-body">
+                                        <span>Details for some product</span>
+                                    </div>
+                                    <div class='modal-footer'>
+                                        <button type="button"
+                                        class="btn btn-danger"
+                                        data-dismiss="modal">
+                                            &times;
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="media">
+                        <div class="media-right">
+                         <img src="" class="media-object" style="width:65px">
+                        </div>
+                        <div class="media-body">
+                            <p>this is something about media in bootstrap3.</p>
+                        </div>
                 </div>
             </div>
         </div>

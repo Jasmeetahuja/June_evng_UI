@@ -55,3 +55,18 @@ dotted
 dashed
 double
 groove
+
+
+****Grid in Bootstrap3****
+xs
+sm 
+md
+lg 
+
+
+*****Grid in Bootstrap4******
+xs
+sm 
+md 
+lg 
+xl

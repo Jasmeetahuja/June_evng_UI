@@ -125,3 +125,36 @@ true+true+1
 VM1034:1 Uncaught ReferenceError: Invalid left-hand side in assignment
 "1"+true+true
 "1truetrue"
+
+
+modules
+
+var a = 10
+undefined
+10%2
+0
+10%3
+1
+
+console.log()
+prompt
+confirm
+alert
+
+var a = 10
+undefined
+console.log(a)
+VM175:1 10
+undefined
+alert("done")
+undefined
+confirm("do you like this?")
+true
+confirm("do you like this?")
+false
+prompt("what is your name?")
+"jasmeet"
+var a = prompt("what is your name?")
+undefined
+a
+"jsasmeert"

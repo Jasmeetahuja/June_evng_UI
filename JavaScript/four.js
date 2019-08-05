@@ -43,3 +43,12 @@ if(output === true){
 }else{
     console.log("thanks for staying")
 }
+
+var a = 10;
+if(a%2===0){
+    console.log("number is even")
+}else if(a%3===0 && a%5===0){
+    console.log("number is divisible by 3 or 5")
+}else{
+    console.log("number is odd")
+}

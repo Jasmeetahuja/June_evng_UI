@@ -1,0 +1,7 @@
+Luck game
+
+you have generate random number upto 3 digit
+you have to ask user one number(user input can be anything)
+If number match say you win else give try again
+if in case not match say you lose else say you win.
+

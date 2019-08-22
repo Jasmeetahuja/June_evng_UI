@@ -10,6 +10,8 @@ function loadPage(){
         } else {
             a = a+20
             b = parseInt(i)+parseInt(a);
+            console.log("a>>>>>>>", a);
+            console.log("b>>>>>>", b);
             if(b == 0 || b == "undefined"){
                 document.getElementsByClassName('progress-bar')[1].style.width = "0%";
             } else if (b == 20){
@@ -29,3 +31,4 @@ function loadPage(){
 }
 
 window.onload = loadPage(); 
+

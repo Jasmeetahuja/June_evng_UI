@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <style>
+            .hidden{
+                display: none;
+            }
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            function showpage() {
+                $('.main').removeClass('hidden')
+            }
+            function btob() {
+                $('.main').addClass('hidden')
+            }
+            $(document).ready(() => {
+                $('#add').click(() => {
+                    $('ul').prepend('<li>New</li>')
+                })
+                $('#add1').click(() => {
+                    $('p').prepend('<input type="text" placeholder="something"><br/>')
+                })
+            })
+        </script>
+    </head>
+    <body>
+        <div class = "main hidden">
+            <h2 class = "js-hide-it">Hello Folks</h2>
+            <p class = "js-para">Welcome</p>
+            <ul></ul>
+        </div>
+        <button type= "button" onclick="showpage()">Show Page</button>
+        <button type="button" id ="add">Add New</button>
+        <button id="backtobasic" onclick="btob()">Back to Basic</button>
+        <button id = "add1">Add Something</button>
+    </body>
+</html>

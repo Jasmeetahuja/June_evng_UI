@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <script type = "text/javascript">
+        const validateEmail = () => {
+            let vpattern = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/;
+            var email = document.getElementById('email').value;
+            var out;
+            if(email.match(vpattern)) {
+                   out = ""
+            } else {
+                out ="Enter valid Email"
+            }
+            document.getElementsByTagName('span')[0].innerHTML=out;
+        };
+        const checkemail = () => {
+            var email = document.getElementById('email').value;
+            var cemail = document.getElementById('cemail').value;
+            var outt;
+            if(email === cemail) {
+                outt = ""
+            } else {
+                outt = "Email doesnt match"
+            }
+            document.getElementsByTagName('span')[0].innerHTML = outt;
+        }
+        </script>
+    </head>
+    <body>
+        <label>FirstName</label>
+        <input type = "text" onblur="firstToUpper()" id="fname"/>
+        <br/>
+        <label>LastName</label>
+        <input type = "text" id ="lname"/>
+        <label>Email</label>
+        <input type ="text" id ="email" onblur="validateEmail()"/>
+        <br/>
+        <label>Confirm Email</label>
+        <input type = "text" onblur="checkemail()" id="cemail"/>
+        <span style ="color:red"></span>
+    </body>
+</html>

@@ -1,17 +1,30 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import Header from './header';
+import Header from './components/header';
+import JSON from './db.json';
+
+import NewsList from './components/news_list';
 
 //JSX
-const App = () => {
-    return(
-        <div>
-            <Header/>
-            <h1>Welcome to React App</h1>
-            <h1>This is Apex class</h1>
-            <div>This is inner div</div>
-        </div>
-    )
+
+class App extends Component {
+
+    constructor(){
+        super()
+
+        this.state={
+            news:JSON
+        }
+    }
+    render(){
+        return(
+            <div>
+                <Header/>
+                <NewsList newsdata={this.state.news}/>
+            </div>
+        )
+    }
 }
+
 
 ReactDOM.render(<App/>, document.getElementById('root'))

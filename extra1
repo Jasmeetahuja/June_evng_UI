@@ -6,3 +6,28 @@
     name: 'Jasmeet'
     age:25
 }
+
+/******************
+    Component
+******************/
+
+State
+Props
+State==> it is a local variable the holds data
+
+
+A        ----Props---->               B
+State                               State
+
+
+Ternary Operator
+var a = 10
+undefined
+a>10 ? "ok":"not ok"
+"not ok"
+a>9 ? "ok":"not ok"
+"ok"
+
+
+<NewsList newsdata={this.state.news}/>
+Sending State "news" with prop "newsdata" to component "NewsList"

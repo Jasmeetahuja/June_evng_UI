@@ -2,8 +2,19 @@ import React from 'react';
 
 const NewsList =(props) => {
     console.log('getting in Neslist>>>>', props)
+
+    const output = props.newsdata.map((item) => {
+        return(
+            <div key={item.id}>
+                <h3>{item.title}</h3>
+                <div>{item.feed}</div>
+            </div>
+        )
+    })
     return(
-        <h1>News data</h1>
+        <div>
+            {output}
+        </div>
     )
 }
 

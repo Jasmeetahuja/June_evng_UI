@@ -15,6 +15,7 @@ class Header extends Component {
     inputChange(e){
         console.log(e.target.value)
         this.setState({userInput:e.target.value? e.target.value: 'User Search'})
+        this.props.userInput(e.target.value)
     }
 
     render() {
